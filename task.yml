@@ -5,11 +5,11 @@
   - name : launch ec2
     ec2 : 
      instance_type : t2.micro
-     key_name : ca-central
+     key_name : devops-ec2
      image : ami-07c8bc5c1ce9598c3 
-     region : ca-central-1
+     region : us-east-2
      group : default
      count : 1
-     vpc_subnet_id : subnet-ecdf9f84
+     vpc_subnet_id : subnet-d5824abe
      wait : yes
      assign_public_ip : yes
