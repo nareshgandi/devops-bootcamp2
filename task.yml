@@ -7,7 +7,7 @@
      instance_type : t2.micro
      key_name : devops-ec2
      image : ami-07c8bc5c1ce9598c3 
-     region : us-east-2
+     ec2_url: https://ec2.eu-west-2.amazonaws.com
      group : default
      count : 1
      vpc_subnet_id : subnet-d5824abe
