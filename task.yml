@@ -1,0 +1,17 @@
+- name : ec2-launcher
+  hosts : localhost
+  connection : local
+  tasks :
+  - name : launch ec2
+    ec2 : 
+     instance_type : t2.micro
+     aws_access_key : AKIARMPCUTDA3FHSSKEM
+     aws_secret_key : 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
+     key_name : devops-ec2
+     image : ami-07c8bc5c1ce9598c3 
+     region : us-east-2
+     group : default
+     count : 1
+     vpc_subnet_id : subnet-d5824abe
+     wait : yes
+     assign_public_ip : yes
