@@ -6,6 +6,7 @@
     ec2 : 
      instance_type : t2.micro
      key_name : devops-ec2
+     ec2_url: https://ec2.amazonaws.com
      image : ami-07c8bc5c1ce9598c3 
      group : default
      count : 1
